@@ -54,8 +54,18 @@ depth = image.shape[2]
 #image[height // 2:, :] = image[height // 2:, :]
 
 #окончательный вариант 3.3 :
-#rol = image[:height // 2,:,]
+# rol = image[:height // 2,:,]
 # image[height // 2:, :] = cv2.flip(rol, 0)
+
+# image[:,:, ] =20
+# image[:,:,0]=0
+# image[:,:,1]=0
+# image[:,:,2]=0
+#окончателньый вариант 3.1
+# rol = image[:,:,0]
+# image = rol
+
+
 
 
 
