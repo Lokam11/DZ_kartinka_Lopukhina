@@ -33,13 +33,13 @@
 #     return None
 # ret = is_palindrome(string)
 
-import cv2
-image = cv2.imread('images/i.jpg')
-
-print(f'image shape = {image.shape}')
-height = image.shape[0]
-width = image.shape[1]
-depth = image.shape[2]
+# import cv2
+# image = cv2.imread('images/i.jpg')
+#
+# print(f'image shape = {image.shape}')
+# height = image.shape[0]
+# width = image.shape[1]
+# depth = image.shape[2]
 
 #первым идет высота
 # sliced_region = image_np[:, 50:150]
@@ -65,12 +65,28 @@ depth = image.shape[2]
 # rol = image[:,:,0]
 # image = rol
 
+# # cv2.imshow('Sliced Image', sliced_region)
+# cv2.imshow('Sliced Image', image)
+# #cv2.imshow('Sliced Image', rol)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 
+# from PIL import Image
+#
+# im = Image.open("images/i.png")
+# box = (0, 0, 1000, 1000)
+# region = im.crop(box)
+# #region.show()
+#
+# #первая кордина x
+# for x in range (im.size[0] // 2):
+#     for y in range(im.size[1] // 2):
+#         pix = m.getpixel((x,y))
+#         avg = (pix[0] + pix[1] + pix[2]) // 3
+#         im.putpixel((x,y), (avg,avg,avg))
+# im.show()
+# im.save('i.jpg')
+# im = Image.open('.i.png')
 
-
-# cv2.imshow('Sliced Image', sliced_region)
-cv2.imshow('Sliced Image', image)
-#cv2.imshow('Sliced Image', rol)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+print("Выберите что хотите сделать")
